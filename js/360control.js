@@ -36,12 +36,10 @@ function initControl() {
 		
 
 		document.body.addEventListener("mouseup", mouseUp, false);
-		
 	};	
 	function mouseUp(event) {
 		// document.body.removeEventListener("mouseup", mouseUp, false);
 	  canvas.removeEventListener("mousemove",mouseX, false);
-	  console.log("alpha2 -> " + ALPHA2);
 	};
 
 
@@ -55,7 +53,6 @@ function initControl() {
 	  	A = ALPHA;
 	  	DIFF = X[0] - X[1];
 
-	  	// ALPHA = Math.abs(DIFF);
 	  	ALPHA = DIFF;
 
 	  	B = ALPHA;
@@ -70,15 +67,15 @@ function initControl() {
 	  	  	if (B > A) {
 	  	  		if (currentFrame < bottomFrame ) {//or TRY 1 here...> see helmetLoop
 	  	  			currentFrame = frames;
-	  	  		} currentFrame--;
-	  	  		console.log("ALPHA06 =>" + ALPHA);
-	  	  	} console.log("currentFrame2 = " + currentFrame)
+	  	  		}
+	  	  		currentFrame--;
+	  	  		
+	  	  	} 
 	  	  	var ALPHA2 = ALPHA;	
-	  	  	console.log("currentFrame3 = " + currentFrame)
-	  	  	console.log("ALPHA##2 => " + ALPHA);
+
 	  	  	ctx.clearRect(0, 0, width, height);
 	  	  	ctx.drawImage(image, 0, height * currentFrame, width, height, 0, 0, width, height);
-	  	  	console.log("alpha2 -> " + ALPHA2);
+
 	  	  	//WHATS THIS???
 	  	  	X[1] = X[0];////
 	  // }

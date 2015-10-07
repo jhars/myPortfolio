@@ -13,111 +13,96 @@
   <body onload="initControl()" id="designframe">
    <div id="canvasDiv" class="container-fluid">
      <div class="row">
-      <div class="col-md-3">
-      </div>
-        <div class="col-md-8">
+      <div class="col-xs-1"></div>
+        <div class="col-lg-8">
+        <!-- CANVAS -->
           <canvas id="clickCanvas" width="800px" height="600px"></canvas> 
         </div>  
-          <div class="col-lg-1"></div>
+          <!-- <div class="col-xs-1"></div> -->
         </div>
       </div>
              
-     </div>
-   </div>
   
-
-
-
 
     <div class="container-fluid" id="iframes">
       <div class="row" id="content">
-        <div class="col-md-4">
-        <h1>$implify-Local</h1>
-        <hr>
+        <div class="col-lg-4">
+          <h1>$implify-Local</h1><hr>
           <img id="imgSimpL" src="./images/screenShots/simpL.png" height="100%" width="100%"/>
         </div>
-        <div class="col-md-4">
-        <h1>360.lax</h1>
-        <hr>
+        <div class="col-lg-4">
+        <h1>360.lax</h1><hr>
           <img id="imgHelmet" src="./images/screenShots/lax360.png" height="100%" width="100%"/>
         </div>
-        <div class="col-md-4">
-        <h1>nXu</h1>
-        <hr>
-          <img id="imgNexu" src="./images/screenShots/nexu.png" height="100%" width="100%"/>
+        <div class="col-lg-4">
+          <h1>nXu</h1><hr>
+            <img id="imgNexu" src="./images/screenShots/nexu.png" height="100%" width="100%"/>
         </div>
       </div>
-      <div id="job-title">
-        <h1>
-        <br>
-          Web and Software
-        </h1>
-        <h2>
-          Application Portfolio
-        </h2>
-        <br>
-      </div>
-        <!-- <div class="col-sm-1"></div> -->
+    </div>
+
+    <div id="job-title">
+      <h1><br>Web and Software</h1>
+      <h2>Application Portfolio</h2><br>
+    </div>
+
+<!-- ===========NAVBAR=========== -->
+<img id="jhLogo" id="nav-top" class="navbar-fixed-top center-block" src="./images/MainLogoJH.png"/>
         <div class="row">
-
-        <nav class='sidebar sidebar-menu-collapsed'>
-          <a href='#' id='justify-icon'>
-            <span class='glyphicon glyphicon-align-justify'></span>
-          </a>
-          <ul>
-            <li class='active nav-span'>
-              <a class='expandable' href='#' title='Dashboard'>
-                <span class='glyphicon glyphicon-folder-open collapsed-element'></span>
-                <span class='expanded-element' id="dashboard">Projects</span>
-              </a>
-              <hr>
-            </li>
-            <li class="active nav-span">
-              <a class='expandable' href='#' title='About Me'>
-                <span class='glyphicon glyphicon-user collapsed-element'></span>
-                <span class='expanded-element'>About Me</span>
-              </a>
-              <hr>
-            </li>
-            <li class='active nav-span'>
-              <a class='expandable' href='#' title='Languages'>
-                <span class='glyphicon glyphicon-console collapsed-element'></span>
-                <span class='expanded-element'>Languages</span>
-              </a>
-              <hr>
-            </li>
-            <li class='active nav-span'>
-              <a class='expandable' href='#' title='Design'>
-                <span class='glyphicon glyphicon-tint collapsed-element'></span>
-                <span class='expanded-element'>Design</span>
-              </a>
-              <hr>
-            </li>
-            <img src="./images/tall-wood.png" id="wood"/>
-          </ul>
-          <a href='#' id='logout-icon' title='Logout'>
-            <span class='glyphicon glyphicon-off'></span>
-          </a>
-        </nav>
-        <div class="container-fluid">
-        <!-- <canvas></canvas> -->
-
           
-        </div>
+          <nav class='sidebar sidebar-menu-collapsed'>
+            <a href='#' id='justify-icon'>
+              <span class='glyphicon glyphicon-align-justify'></span>
+            </a>
+            <ul>
+              <li class='active nav-span'>
+                <a class='expandable' href='#' title='Dashboard'>
+                  <span class='glyphicon glyphicon-folder-open collapsed-element'></span>
+                  <span class='expanded-element' id="dashboard">Projects</span>
+                </a>
+                <hr>
+              </li>
+              <li class="active nav-span">
+                <a class='expandable' href='#' title='About Me'>
+                  <span class='glyphicon glyphicon-user collapsed-element'></span>
+                  <span class='expanded-element'>About Me</span>
+                </a>
+                <hr>
+              </li>
+              <li class='active nav-span'>
+                <a class='expandable' href='#' title='Languages'>
+                  <span class='glyphicon glyphicon-console collapsed-element'></span>
+                  <span class='expanded-element'>Languages</span>
+                </a>
+                <hr>
+              </li>
+              <li class='active nav-span'>
+                <a class='expandable' href='#' title='Design'>
+                  <span class='glyphicon glyphicon-tint collapsed-element'></span>
+                  <span class='expanded-element'>Design</span>
+                </a>
+                <hr>
+              </li>
+              <img src="./images/tall-wood.png" id="wood"/>
+            </ul>
+            <a href='#' id='logout-icon' title='Logout'>
+              <span class='glyphicon glyphicon-off'></span>
+            </a>
+          </nav>
         
         </div>
-      </div>
-      <nav class="navbar-fixed-top" id="nav-top">
-          <img id="jhLogo" class="center-block" src="./images/MainLogoJH.png"/>
-        </nav>
-    </div>
+      
+          
+
   </div>
 
-
-    <script type="text/javascript" src="360control.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="360control.js"></script>
+
+
+
+    <!-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
      
     <script src="app.js"></script>
   </body>
