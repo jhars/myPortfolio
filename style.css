@@ -3,20 +3,24 @@
 @import url('http://getbootstrap.com/dist/css/bootstrap.css');
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
+body {
+  background: none repeat scroll 0 0 #142933; }
+
 /*=====================CUSTOM CSS======================*/
 
 /*CUSTOM LAYOUT*/
-#iframes{
+/*#iframes{
   margin-left:72px;
   margin-top:-7px;
-}
+  width:100%;
+}*/
 #wood {
   margin-top:80%;
   margin-left:-10px;
   width: 75px;
   height:200%;
   margin-top: -750px;
-  box-shadow: 3px 10px 5px #335C85;
+  box-shadow: 3px 10px 5px #000000;
 }
 h1{
   text-align: center;
@@ -33,6 +37,13 @@ h2{
 
 #content {
   background-color: #193E47;
+  /*width: 100%;*/
+  height:100%;
+  margin-left:50px;
+  margin-left:24px;
+  margin-top: -7px;
+  /*border-radius: 10px;*/
+
 }
 
 #job-title{
@@ -40,6 +51,8 @@ h2{
   opacity: .5;
   margin-top: -22px;
 }
+
+
 
 /*
 html {
@@ -50,13 +63,20 @@ html {
 /*HTML5 CANVAS STYLING*/
 
 #clickCanvas {
-  margin-top: 140px;
+  margin-top: 133px;
   background-image: url('./images/threeSixtylogo.png');
   background-repeat: no-repeat;
   margin-left: 72px;
 
-
 }
+
+#JH {
+  /*z-index: 999;*/
+  height:100px;
+  width:165px;
+}
+
+/*class="center-block"*/
 
 #jhLogo {
 width: 100%;
@@ -66,6 +86,9 @@ margin-left: 76px;
 /*CHANGE ABOVE*/
 #canvasDiv {
   margin-top: -40px;
+  /*background: none repeat scroll 0 0 #ffffff;*/
+  background-image: url('./images/wood.jpg');
+
 }
 
 
@@ -74,8 +97,7 @@ margin-left: 76px;
 /*SIDEMENU NAVBAR ORGINAL CSS*/
 /**********************************************/
 
-body {
-  background: none repeat scroll 0 0 #142933; }
+
 
 
 nav.sidebar-menu-collapsed {

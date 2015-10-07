@@ -10,36 +10,53 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
+
   <body onload="initControl()" id="designframe">
-   <div id="canvasDiv" class="container-fluid">
-     <div class="row">
-      <div class="col-xs-1"></div>
-        <div class="col-lg-8">
-        <!-- CANVAS -->
-          <canvas id="clickCanvas" width="800px" height="600px"></canvas> 
-        </div>  
-          <!-- <div class="col-xs-1"></div> -->
-        </div>
-      </div>
-             
   
 
-    <div class="container-fluid" id="iframes">
+  <div>
+    <img id="jhLogo" src="./images/MainLogoJH.png" class="navbar-fixed-top center-block"/>
+    <img id="JH" src="./images/logoJH.png" class="navbar-fixed-top center-block" />
+  </div>
+  
+       
+          
+
+  
+
+   <div id="canvasDiv" class="container-fluid">
+
+     <div class="row">
+      <div class="col-sm-3"></div>
+        <div id="slider" class="col-xl-7">
+        <!-- class="center-block" -->
+        <!-- CANVAS -->
+          <canvas id="clickCanvas" clas="center-block" width="800px" height="600px"></canvas> 
+        </div>
+        <div class="col-xl-2"></div>
+        <!-- <div class="col-lg-3"></div>   -->
+          <!-- <div class="col-xs-1"></div> -->
+        </div>
+      <!-- </div> -->
+    <!-- <div class="container" id="iframes"> -->
       <div class="row" id="content">
-        <div class="col-lg-4">
-          <h1>$implify-Local</h1><hr>
+      <br><br><br><br><br><br><br><br><br>
+
+        <div class="col-md-4">
+          <h1>$implify</h1><hr>
           <img id="imgSimpL" src="./images/screenShots/simpL.png" height="100%" width="100%"/>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-4">
         <h1>360.lax</h1><hr>
           <img id="imgHelmet" src="./images/screenShots/lax360.png" height="100%" width="100%"/>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <h1>nXu</h1><hr>
             <img id="imgNexu" src="./images/screenShots/nexu.png" height="100%" width="100%"/>
         </div>
       </div>
-    </div>
+
+    
 
     <div id="job-title">
       <h1><br>Web and Software</h1>
@@ -47,13 +64,16 @@
     </div>
 
 <!-- ===========NAVBAR=========== -->
-<img id="jhLogo" id="nav-top" class="navbar-fixed-top center-block" src="./images/MainLogoJH.png"/>
+<!-- DIV Refactor here -->
+
+          
         <div class="row">
           
           <nav class='sidebar sidebar-menu-collapsed'>
             <a href='#' id='justify-icon'>
               <span class='glyphicon glyphicon-align-justify'></span>
             </a>
+
             <ul>
               <li class='active nav-span'>
                 <a class='expandable' href='#' title='Dashboard'>
@@ -85,16 +105,15 @@
               </li>
               <img src="./images/tall-wood.png" id="wood"/>
             </ul>
+
             <a href='#' id='logout-icon' title='Logout'>
               <span class='glyphicon glyphicon-off'></span>
             </a>
           </nav>
-        
         </div>
       
-          
+          </div>
 
-  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
