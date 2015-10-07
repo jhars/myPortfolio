@@ -1,26 +1,27 @@
-var sources = {
-    BASE: '../images/socks/eSockMulti.jpg'
-};  
-  // ,
-  //        '../images/socks/eSockBluGr.jpg'
-         
+// var sources = {
+//   BASE: '../images/socks/eSockMulti.jpg'
+// };
 
+var sources =  ['../images/socks/eSockMulti.jpg',
+                '../images/socks/eSockBluGr.jpg',
+                '../images/socks/eSockOrange.jpg'
+                ]
+
+// var sources = [[BayViewGoes Here]]
 
 
 //============IMAGE LOADER=================//
 var images = {};
 
-
 function loadImages(sources, callback) {
 
-  
 
   var loadedImages = 0;
   var numImages = 0;
   // get num of sources
-  for(var src in sources) {
+  for(var i in sources) {
     numImages++;
-    src++;
+    // src++;
   }
   for(var src in sources) {
     images[src] = new Image();
@@ -31,32 +32,38 @@ function loadImages(sources, callback) {
 
     };
     images[src].src = sources[src];
-    // console.log(images[src].src);
-    imgArray.push(images[src].src);
+    // imgArray.push(images[src].src);
+
+    // console.log(images[src]);
+    // var srcImage = images[src];
+    // context.drawImage(srcImage, 0, i-900, 300, 300);
     
   }
 }
+    
+  var canvas = document.getElementById('customHelmet');
+  var context = canvas.getContext('2d');
 
 
-
-var canvas = document.getElementById('customHelmet');
-var context = canvas.getContext('2d');
-
-var imgArray = [];
-console.log(imgArray);
-
-
-i=0;
-  while ( i < 301 ) {
     loadImages(sources, function(images) {
-    var imgBASE = images.BASE;
-    imgArray[i] = imgBASE;
-    context.drawImage(imgArray[i], 0, i-600, 300, 300)
-    // context.drawImage(images.img01, 0, 300, 300, 300)
-    console.log(imgArray[i]);
+        
+      for (i=0;i< 601;i++) {
+        console.log(images[i]);
+        context.drawImage(images[i], 0, i*300, 300, 300);
+
+      }
+     
+
     });
-    i+=300;
+
+    var dataURL = canvas.toDataURL();
+
+      // set canvasImg image src to dataURL
+      // so it can be saved as an image
+      document.getElementById('customHelmet').src = dataURL;
+
+    
 
 
-  }
+
 
