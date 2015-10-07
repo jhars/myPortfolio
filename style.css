@@ -65,10 +65,10 @@ html {
 /*HTML5 CANVAS STYLING*/
 
 #clickCanvas {
-  margin-top: 133px;
-  background-image: url('./images/threeSixtylogo.png');
+  margin-top: 180px;
+  /*background-image: url('./images/threeSixtylogo.png');*/
   background-repeat: no-repeat;
-  margin-left: 72px;
+  margin-left: 200px;
 
 }
 

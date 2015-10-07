@@ -4,15 +4,15 @@ var canvas = document.getElementById("clickCanvas");
 var ctx = canvas.getContext("2d");
 
 var image = new Image()
-image.src = 'images/bayView360.png';
+image.src = 'images/bay360Sprint.png';
 
-var frames = 36;
+var frames = 100;
 var bottomFrame = 1;
 var currentFrame;
 var currentFrame = bottomFrame;
 var click = false;
-var width = 800;
-var height = 600;
+var width = 109;
+var height = 81.75;
 var B;
 var ALPHA;
 var DIFF = 0;
