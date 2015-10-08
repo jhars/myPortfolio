@@ -9,11 +9,11 @@ body {
 /*=====================CUSTOM CSS======================*/
 
 /*CUSTOM LAYOUT*/
-/*#iframes{
-  margin-left:72px;
-  margin-top:-7px;
-  width:100%;
-}*/
+
+#designDesign {
+  padding-top: 140px;
+}
+
 #wood {
   margin-top:80%;
   margin-left:-10px;
@@ -28,6 +28,10 @@ h1{
   font-size: 36px;
 }
 
+h1#mid {
+  font-size: 64px;
+}
+
 h2{
   text-align: center;
   color: white;
@@ -37,12 +41,9 @@ h2{
 
 #content {
   background-color: #193E47;
-  /*width: 100%;*/
   height:100%;
-  /*margin-left:100px;*/
   margin-left:56px;
   margin-top: -7px;
-  /*border-radius: 10px;*/
 
 }
 
@@ -65,10 +66,12 @@ html {
 /*HTML5 CANVAS STYLING*/
 
 #clickCanvas {
-  margin-top: 180px;
-  /*background-image: url('./images/threeSixtylogo.png');*/
+  margin-top: 75px;
+  background-image: url('./images/threeSixtylogo.png');
   background-repeat: no-repeat;
-  margin-left: 200px;
+  margin-left: 67px;
+  height: 600px;
+  width: 800px;
 
 }
 
@@ -107,7 +110,7 @@ nav.sidebar-menu-collapsed {
   opacity: 1;
   }
 nav.sidebar-menu-expanded {
-  width: 300px;
+  width: 400px;
    }
 nav.sidebar {
   position: fixed;
@@ -116,38 +119,31 @@ nav.sidebar {
   height: 100%;
   background: none repeat scroll 0 0;
   color: white;
-  background-image: './images/tall-wood';
+  /*background-image: './images/tall-wood';*/
   padding: 20px 10px;
    }
   nav.sidebar a#justify-icon {
     outline: 0;
     color: #193A6A;
-    font-size: 36px;
+    font-size: 40px;
     font-style: normal;
     margin-left: 7px;
      }
-  nav.sidebar a#logout-icon {
-    outline: 0;
-    color: white;
-    font-size: 36px;
-    font-style: normal;
-    position: absolute;
-    bottom: 10px;
-    left: 10px; }
+
   nav.sidebar ul {
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 24px;
      }
     nav.sidebar ul li {
       margin: 0;
       list-style-type: none;
        }
       nav.sidebar ul li a.expandable {
-        outline: 0;
+        /*outline: 0;*/
         color: blue;
-        text-decoration: none;
-        font-size: 36px; }
+        /*text-decoration: none;*/
+        font-size: 24px; }
         nav.sidebar ul li a.expandable:hover {
           /*color: #0099CC;*/
           /*background-color: white;*/
@@ -166,27 +162,28 @@ nav.sidebar {
 /*HERE, ABOVE!*/
 
         nav.sidebar ul li a.expandable span.expanded-element {
-          margin-left: 24px;
+          margin-left:48px;
           display: none;
-          font-size: 30px;
-          position: relative;
-          bottom: 2px;
-          width:100%;
+          font-size: 24px;
+          /*position: absolute;*/
+          /*bottom: 2px;*/
+          /*top:2px;*/
+          /*width:100%;*/
           color: #193A6A;
-          font-weight: 20px;
+          /*font-weight: 20px;*/
           /*background-color: #193A6A*/
            }
       nav.sidebar ul li.active {
         background: none repeat scroll 0 0 #FFFFC2;
         color: #193A6A;
-        box-shadow: 3px 5px 5px #335C85;
-        border-radius: 0px;
-        text-align: left;
-        /*position: relative;*/
+        /*box-shadow: 3px 5px 5px #335C85;*/
+        /*border-radius: 0px;*/
+        /*text-align: left;*/
+        /*position: absolute;*/
 
         /*margin-left: -4px;*/
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding: 10px;
+        
         /*padding: 0;*/
          }
         nav.sidebar ul li.active a.expandable {

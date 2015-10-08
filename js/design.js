@@ -1,25 +1,22 @@
-// var sources = {
-//   BASE: '../images/socks/eSockMulti.jpg'
-// };
 
 var sources =  [
-                '../images/designGraphics/uVaShorts.png',
-                '../images/designGraphics/AzteCPocket.png',
-                '../images/designGraphics/Camo-pocket.jpg',
-                '../images/designGraphics/eTHLogo.png',
+                '../images/designGraphics/rLogo.jpg',
                 '../images/designGraphics/rPackApp.png',
-                '../images/designGraphics/eaMic.png',
-                '../images/designGraphics/eSockBlkGr.jpg',
                 '../images/designGraphics/eSockMulti.jpg',
+                '../images/designGraphics/eSockBlkGr.jpg',
                 '../images/designGraphics/eSockOrange.jpg',
+                '../images/designGraphics/eTHLogo.png',
+                '../images/designGraphics/Camo-pocket.jpg',
+                '../images/designGraphics/AzteCPocket.png',
+                '../images/designGraphics/uVaShorts.png',
+                '../images/designGraphics/eaMic.png',
                 '../images/designGraphics/r7v7.gif',
-                '../images/designGraphics/rFLGS.jpg',
-                '../images/designGraphics/rLogo.jpg'
+                '../images/designGraphics/rFLGS.jpg'
+                
 
                 ];
 
 // var sources = [[BayViewGoes Here]]
-
 
 //============IMAGE LOADER=================//
 var images = {};
@@ -43,37 +40,26 @@ function loadImages(sources, callback) {
 
     };
     images[src].src = sources[src];
-    // imgArray.push(images[src].src);
-
-    // console.log(images[src]);
-    // var srcImage = images[src];
-    // context.drawImage(srcImage, 0, i-900, 300, 300);
-    
   }
 }
     
-  var canvas = document.getElementById('customHelmet');
+  var canvas = document.getElementById('designDesign');
   var context = canvas.getContext('2d');
+
 
 
     loadImages(sources, function(images) {
         
-      for (i=0;i< 601;i++) {
+      for (i=0;i< 12;i++) {//number of IMAGES Loaded
         console.log(images[i]);
-        context.drawImage(images[i], 0, i*320, 400, 300);
+        context.drawImage(images[i], 0, i*330, 380, 290);
+      context.shadowColor = '#999';
+      context.shadowBlur = 70;
+      context.shadowOffsetX = 0;
+      context.shadowOffsetY = 15;
 
       }
-     
-
     });
-
-    // var dataURL = canvas.toDataURL();
-
-    //   // set canvasImg image src to dataURL
-    //   // so it can be saved as an image
-    //   document.getElementById('customHelmet').src = dataURL;
-
-    
 
 
 

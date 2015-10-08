@@ -13,35 +13,29 @@
 
   <body onload="initControl()" id="designframe">
   
-
   <div>
     <img id="jhLogo" src="./images/MainLogoJH.png" class="navbar-fixed-top center-block"/>
     <img id="JH" src="./images/logoJH.png" class="navbar-fixed-top center-block" />
   </div>
   
-       
-          
-
-  
-
    <div id="canvasDiv" class="container-fluid">
-
      <div class="row">
-      <div class="col-sm-3"></div>
-        <div id="slider" class="col-xl-6">
+      <div class="col-xs-2"></div>
+        <div id="slider" class="col-lg-7">
         <!-- class="center-block" -->
         <!-- CANVAS -->
-          <canvas id="clickCanvas" clas="center-block" width="200%" height="200%"></canvas> 
+
+          <canvas id="clickCanvas" clas="center-block" width="90%" height="115%"></canvas> 
+          <!-- <img id="threeSixty" src="./images/threeSixtylogo.png"/> -->
         </div>
         <div class="col-sm-3"></div>
-        <!-- <div class="col-lg-3"></div>   -->
-          <!-- <div class="col-xs-1"></div> -->
-        </div>
-      <!-- </div> -->
-    <!-- <div class="container" id="iframes"> -->
-      <div class="row" id="content">
-      <br><br><br><br><br><br><br><br><br>
+      </div>      <!-- endrow -->
 
+      <div class="row" id="content">
+      <br><br>
+      <h1 id="mid">Web App Portfolio:</h1>
+
+      <br><br><br><br><br>
         <div class="col-md-4">
           <h1>$implify</h1><hr>
           <img id="imgSimpL" src="./images/screenShots/simpL.png" height="100%" width="100%"/>
@@ -54,23 +48,19 @@
           <h1>nXu</h1><hr>
             <img id="imgNexu" src="./images/screenShots/nexu.png" height="100%" width="100%"/>
         </div>
+      </div>  <!-- endrow -->
+
+      <div id="job-title">
+        <h1><br>Web and Software</h1>
+        <h2>Application Portfolio</h2><br>
       </div>
 
-    
-
-    <div id="job-title">
-      <h1><br>Web and Software</h1>
-      <h2>Application Portfolio</h2><br>
-    </div>
-
 <!-- ===========NAVBAR=========== -->
-<!-- DIV Refactor here -->
-
-          
+<!-- DIV Refactor here -->          
         <div class="row">
           
           <nav class='sidebar sidebar-menu-collapsed'>
-            <a href='#' id='justify-icon'>
+            <a class='expandable' href='#' id='justify-icon'>
               <span class='glyphicon glyphicon-align-justify'></span>
             </a>
 
@@ -78,7 +68,7 @@
               <li class='active nav-span'>
                 <a class='expandable' href='#' title='Dashboard'>
                   <span class='glyphicon glyphicon-folder-open collapsed-element'></span>
-                  <span class='expanded-element' id="dashboard">Projects</span>
+                  <span class='expanded-element' id="dashboard">App Portfolio</span>
                 </a>
                 <hr>
               </li>
@@ -97,7 +87,7 @@
                 <hr>
               </li>
               <li class='active nav-span'>
-                <a class='expandable' href='views/socks.html#' title='Design'>
+                <a class='expandable' href='views/graphicDesign.html#' title='Design'>
                   <span class='glyphicon glyphicon-tint collapsed-element'></span>
                   <span class='expanded-element'>Design</span>
                 </a>
@@ -106,11 +96,10 @@
               <img src="./images/tall-wood.png" id="wood"/>
             </ul>
 
-            <a href='#' id='logout-icon' title='Logout'>
-              <span class='glyphicon glyphicon-off'></span>
+
             </a>
           </nav>
-        </div>
+        </div> <!-- endrow -->
       
           </div>
 
