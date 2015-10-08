@@ -4,20 +4,21 @@ var canvas = document.getElementById("clickCanvas");
 var ctx = canvas.getContext("2d");
 
 var image = new Image()
-image.src = '../images/bayView360.png';
+// image.src = 'images/bay360Sprint.png';
+image.src = 'http://i.imgur.com/BfY4QW5.png';
 
-var frames = 36;
-var bottomFrame = 1;
+var frames = 100;
+var bottomFrame = 18;
 var currentFrame;
-var currentFrame = bottomFrame;
+var currentFrame = 18;
 var click = false;
-var width = 800;
-var height = 600;
+var width = 109;
+var height = 81.75;
 var B;
 var ALPHA;
 var DIFF = 0;
 
-ctx.clearRect(0, 0, width, height);
+// ctx.clearRect(0, 0, width, height);
 ctx.drawImage(image, 0, height * currentFrame, width, height, 0, 0, width, height);
 // ??WHy currentFram * height??
 
@@ -36,10 +37,12 @@ function initControl() {
 		
 
 		document.body.addEventListener("mouseup", mouseUp, false);
+		
 	};	
 	function mouseUp(event) {
 		// document.body.removeEventListener("mouseup", mouseUp, false);
 	  canvas.removeEventListener("mousemove",mouseX, false);
+	  console.log("alpha2 -> " + ALPHA2);
 	};
 
 
@@ -52,30 +55,26 @@ function initControl() {
 
 	  	A = ALPHA;
 	  	DIFF = X[0] - X[1];
-
 	  	ALPHA = DIFF;
-
 	  	B = ALPHA;
-	  	console.log("A - B = " + (A - B));
-	  // if (A != B){
+
 	  			if (B < A){
-	  	  		// ALPHA++;
+
 	  	  		if (currentFrame === frames ) {
-	  	  			currentFrame = 1;
+	  	  			currentFrame = 18;
 	  	  		} currentFrame++;
 	  	  	} console.log("currentFrame1 = " + currentFrame)
 	  	  	if (B > A) {
 	  	  		if (currentFrame < bottomFrame ) {//or TRY 1 here...> see helmetLoop
 	  	  			currentFrame = frames;
-	  	  		}
-	  	  		currentFrame--;
+	  	  		} currentFrame--;
 	  	  		
 	  	  	} 
 	  	  	var ALPHA2 = ALPHA;	
-
+	  	  	
 	  	  	ctx.clearRect(0, 0, width, height);
 	  	  	ctx.drawImage(image, 0, height * currentFrame, width, height, 0, 0, width, height);
-
+	  	  	
 	  	  	//WHATS THIS???
 	  	  	X[1] = X[0];////
 	  // }

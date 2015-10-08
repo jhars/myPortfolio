@@ -52,7 +52,7 @@ function loadImages(sources, callback) {
         
       for (i=0;i< 12;i++) {//number of IMAGES Loaded
         console.log(images[i]);
-        context.drawImage(images[i], 0, i*330, 380, 290);
+        context.drawImage(images[i], 0, i*350, 350, 290);
       context.shadowColor = '#999';
       context.shadowBlur = 70;
       context.shadowOffsetX = 0;
