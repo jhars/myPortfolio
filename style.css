@@ -39,6 +39,11 @@ h2{
   font-style: italic;
 }
 
+h3{
+  color: #728F8F;
+  text-align: center;
+}
+
 #content {
   background-color: #193E47;
   height:100%;
@@ -96,6 +101,14 @@ margin-left: 76px;
 
 }
 
+#designDiv {
+  padding-top: 100px;
+}
+
+div#skill-description {
+  margin-top: 120px;
+}
+
 
 
 
@@ -120,13 +133,13 @@ nav.sidebar {
   background: none repeat scroll 0 0;
   color: white;
   /*background-image: './images/tall-wood';*/
-  padding: 20px 10px;
+  padding: 10px 10px 10px;
    }
   nav.sidebar a#justify-icon {
     outline: 0;
     color: #193A6A;
     font-size: 40px;
-    font-style: normal;
+    /*font-style: normal;*/
     margin-left: 7px;
      }
 
@@ -143,13 +156,15 @@ nav.sidebar {
         /*outline: 0;*/
         color: blue;
         /*text-decoration: none;*/
-        font-size: 24px; }
+        font-size: 30px;
+        padding:10px; }
         nav.sidebar ul li a.expandable:hover {
           /*color: #0099CC;*/
           /*background-color: white;*/
           width: 100%;
           color: #FF6666;
-          margin-left: 0px;
+          /*margin-left: 0px;*/
+          /*margin-top:100px;*/
            }
 
 /*Custom CSS HERE*/
@@ -164,7 +179,8 @@ nav.sidebar {
         nav.sidebar ul li a.expandable span.expanded-element {
           margin-left:48px;
           display: none;
-          font-size: 24px;
+          font-size: 30px;
+          /*margin-top: 30px;*/
           /*position: absolute;*/
           /*bottom: 2px;*/
           /*top:2px;*/
@@ -182,8 +198,8 @@ nav.sidebar {
         /*position: absolute;*/
 
         /*margin-left: -4px;*/
-        padding: 10px;
-        
+        /*padding: 10px;*/
+        margin-top: 50px;
         /*padding: 0;*/
          }
         nav.sidebar ul li.active a.expandable {
