@@ -2,10 +2,21 @@
 //   BASE: '../images/socks/eSockMulti.jpg'
 // };
 
-var sources =  ['../images/socks/eSockMulti.jpg',
-                '../images/socks/eSockBluGr.jpg',
-                '../images/socks/eSockOrange.jpg'
-                ]
+var sources =  ['../images/designGraphics/logoJH.png',
+                '../images/designGraphics/uVaShorts.png',
+                '../images/designGraphics/AzteCPocket.png',
+                '../images/designGraphics/Camo-pocket.jpg',
+                '../images/designGraphics/eTHLogo.png',
+                '../images/designGraphics/rPackApp.png',
+                '../images/designGraphics/eaMic.png',
+                '../images/designGraphics/eSockBlkGr.jpg',
+                '../images/designGraphics/eSockMulti.jpg',
+                '../images/designGraphics/eSockOrange.jpg',
+                '../images/designGraphics/r7v7.gif',
+                '../images/designGraphics/rFLGS.jpg',
+                '../images/designGraphics/rLogo.jpg'
+
+                ];
 
 // var sources = [[BayViewGoes Here]]
 
@@ -49,18 +60,18 @@ function loadImages(sources, callback) {
         
       for (i=0;i< 601;i++) {
         console.log(images[i]);
-        context.drawImage(images[i], 0, i*300, 300, 300);
+        context.drawImage(images[i], 0, i*320, 400, 300);
 
       }
      
 
     });
 
-    var dataURL = canvas.toDataURL();
+    // var dataURL = canvas.toDataURL();
 
-      // set canvasImg image src to dataURL
-      // so it can be saved as an image
-      document.getElementById('customHelmet').src = dataURL;
+    //   // set canvasImg image src to dataURL
+    //   // so it can be saved as an image
+    //   document.getElementById('customHelmet').src = dataURL;
 
     
 
