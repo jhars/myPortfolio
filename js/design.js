@@ -2,7 +2,7 @@
 //   BASE: '../images/socks/eSockMulti.jpg'
 // };
 
-var sources =  ['../images/designGraphics/logoJH.png',
+var sources =  [
                 '../images/designGraphics/uVaShorts.png',
                 '../images/designGraphics/AzteCPocket.png',
                 '../images/designGraphics/Camo-pocket.jpg',
