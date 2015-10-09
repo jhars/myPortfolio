@@ -6,39 +6,64 @@
 body {
   background: none repeat scroll 0 0 #142933; }
 
+
 /*=====================CUSTOM CSS======================*/
-
+/*===========================================*/
+/*================================*/
 /*CUSTOM LAYOUT*/
+/*====================*/
 
-#designDesign {
-  padding-top: 140px;
+/*>>>>>>>NAV TEMPLATE*/
+div#nav-bar-logo{
+  margin-left: 200px;
 }
-
+#JH {
+  /*z-index: 999;*/
+  height:100px;
+  width:165px;
+}
+#jhLogo {
+width: 100%;
+height: 100px;
+margin-left: 67px;
+}
+/*NAV-WOOD?*/
 #wood {
-  margin-top:80%;
   margin-left:-10px;
   width: 75px;
-  height:200%;
-  margin-top: -750px;
   box-shadow: 3px 10px 5px #000000;
+  position: fixed;
+  z-index: 10;
 }
+#designDesign {
+  /*padding-top: 140px;*/
+}
+/*HEADERS*/
+div#portfolio-title{
+
+}
+
 h1{
   text-align: center;
   color: white;
   font-size: 36px;
 }
-
 h1#mid {
   font-size: 64px;
+  z-index: 50;
 }
-
+h1#me {
+  font-size: 64px;
+  text-align: center;
+  /*margin-top: 50px;*/
+  /*margin-left: 100px;*/
+}
 h2{
   text-align: center;
   color: white;
   font-size: 24px;
   font-style: italic;
 }
-
 h3{
   color: #728F8F;
   text-align: center;
@@ -47,171 +72,148 @@ h4{
   text-align: center;
   /*margin-left: 100px;*/
   color: white;
-  font-size: 30px;
+  font-size: 36px;
   font-style: italic;
+  line-height: 60px;
 }
-
-#content {
-  background-color: #193E47;
-  height:100%;
-  margin-left:56px;
-  margin-top: -7px;
-
-}
-
-#job-title{
-  background-color: #193E47;
-  opacity: .5;
-  margin-top: -22px;
-  margin-left: 15px;
-  width:100%;
-}
-
-
-
 /*
 html {
   touch-action: none;
   content-zooming: none;
-}*/
-
+}
+*/
 /*HTML5 CANVAS STYLING*/
-
 #clickCanvas {
-  margin-top: 75px;
+  margin-top: 100px;
   background-image: url('./images/threeSixtylogo.png');
+  background-size: 33%;
   background-repeat: no-repeat;
-  margin-left: 67px;
-  height: 600px;
-  width: 800px;
-
-}
-
-#JH {
-  /*z-index: 999;*/
-  height:100px;
-  width:165px;
-}
-
-/*class="center-block"*/
-
-#jhLogo {
-width: 100%;
-height: 100px;
-margin-left: 76px;
+  height: 1200;
+  /*width: 1200px;*/
+  /*margin-left: 300px;*/
+  position: relative;
+  padding: 0px 50px 20px;
+  z-index: 30;
+  margin-bottom: 15px;
 }
 /*CHANGE ABOVE*/
 #canvasDiv {
-  margin-top: -40px;
-  /*background: none repeat scroll 0 0 #ffffff;*/
-  background-image: url('./images/wood.jpg');
+  background-image: url('./images/chalkboard.jpg');
+  padding: 10px 10px 10px;
 
+  /*height:50%;*/
 }
-
+/*MY APP SCREENSHOTS*/
+#content {
+  background-color: #193E47;
+  height:500px;
+  margin-left:56px;
+  margin-top: -750px;
+  position: relative;
+}
+#footer{
+  /*background-color: #193E47;*/
+  opacity: .5;
+  /*margin-top: -22px;*/
+  /*width:100%;*/
+}
+/*CONTENT STYLING/FORMATTING*/
 #designDiv {
-  padding-top: 100px;
+  /*padding-top: 100px;*/
 }
 
 div#skill-description {
-  margin-top: 120px;
+  /*margin-top: 120px;*/
 }
 
 
 
-
+/**********************************************/
 /*SIDEMENU NAVBAR ORGINAL CSS*/
 /**********************************************/
-
-
-
-
+/*SB COLLAPSE Width*/
 nav.sidebar-menu-collapsed {
-  width: 60px;
-  opacity: 1;
-  }
-nav.sidebar-menu-expanded {
   width: 400px;
-   }
+  /*margin: 5px;*/
+  opacity: 1;
+}
+/*SB EXPANDED Width*/
+nav.sidebar-menu-expanded {
+  width: 100%;
+  /*display: list-item;*/
+  font-size: 36px;
+}
+/*SIDEBAR*/
 nav.sidebar {
   position: fixed;
   top: 0px;
   left: 0px;
-  height: 100%;
-  background: none repeat scroll 0 0;
-  color: white;
-  /*background-image: './images/tall-wood';*/
-  padding: 10px 10px 10px;
-   }
+  /*height: 100%;*/
+  /*background: none repeat scroll 0 0;*/
+  /*background-image: "images/tall-wood.png";*/
+  /*padding: 10px 10px 10px;*/
+  z-index: 20;
+}
+  /*HAMBURGER MENU*/
   nav.sidebar a#justify-icon {
-    outline: 0;
     color: #193A6A;
-    font-size: 40px;
-    /*font-style: normal;*/
-    margin-left: 7px;
-     }
+    font-size: 36px;
+  }
+  /*GlyphIcon HAMBURGER*/
 
+  /*LIST*/
   nav.sidebar ul {
-    margin: 0;
-    padding: 0;
-    margin-top: 24px;
-     }
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*margin-top: 24px;*/
+    margin-top: 67px;
+      /*font-size: 30;*/
+       
+  }
+    /*LIST ITEM */
     nav.sidebar ul li {
-      margin: 0;
-      list-style-type: none;
-       }
+      /*font-size: 24;*/
+
+    }
+    /*LIST ITEM <a> EXPANDABLE*/
       nav.sidebar ul li a.expandable {
-        /*outline: 0;*/
         color: blue;
-        /*text-decoration: none;*/
-        font-size: 30px;
-        padding:10px; }
+        /*padding:0;*/
+        
+      }
+        /*LIST ITEM <a> Exp-Hover*/
         nav.sidebar ul li a.expandable:hover {
-          /*color: #0099CC;*/
-          /*background-color: white;*/
           width: 100%;
-          color: #FF6666;
-          /*margin-left: 0px;*/
-          /*margin-top:100px;*/
-           }
-
-/*Custom CSS HERE*/
-        .nav-span:hover{
-          background-color: #FF6666;
-          width: 100%;
-          color: #193A6A;
-          /*margin-left: -10px;*/
         }
-/*HERE, ABOVE!*/
+        /*NAVI-SPAN??????*/
+        .nav-span:hover{
+          width: 100%;
+        }
+    /*Span Expanded Element*/
+    nav.sidebar ul li a.expandable span.expanded-element {
+          display: inline;
+          /*font-size: 14;*/  /*NAV font Size*/
+          color: #193A6A;/*NAV TEXT COLOR*/
+          /*margin-left: 14px;*/
+          
+    }
+    /*Span Expanded Element (ACTIVE)*/
+    nav.sidebar ul li.active {
+      /*background: none repeat scroll 0 0 #FFFFC2; /*Background YELLOW color*/*/
+      /*display: none;*/
+      color: #193A6A;
+      /*margin-top: 67px;*/
+      /*display:inline;*/
+    }
 
-        nav.sidebar ul li a.expandable span.expanded-element {
-          margin-left:48px;
-          display: none;
-          font-size: 30px;
-          /*margin-top: 30px;*/
-          /*position: absolute;*/
-          /*bottom: 2px;*/
-          /*top:2px;*/
-          /*width:100%;*/
-          color: #193A6A;
-          /*font-weight: 20px;*/
-          /*background-color: #193A6A*/
-           }
-      nav.sidebar ul li.active {
-        background: none repeat scroll 0 0 #FFFFC2;
-        color: #193A6A;
-        /*box-shadow: 3px 5px 5px #335C85;*/
-        /*border-radius: 0px;*/
-        /*text-align: left;*/
-        /*position: absolute;*/
 
-        /*margin-left: -4px;*/
-        /*padding: 10px;*/
-        margin-top: 50px;
-        /*padding: 0;*/
-         }
-        nav.sidebar ul li.active a.expandable {
-          color: white !important; }
-          nav.sidebar ul li.active a.expandable:hover {
-            color: #FF5050 !important; }
+
+/***************************/
+/*CUSTOM COLOR?*/
+/***************************/
+nav.sidebar ul li.active a.expandable {
+color: white !important; }
+nav.sidebar ul li.active a.expandable:hover {
+color: #FF5050 !important; }
 
 

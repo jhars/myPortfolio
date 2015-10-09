@@ -51,8 +51,9 @@ function initControl() {
 	    // event.preventDefault();
 	    var canvasX = event.pageX;
 	    X[1] = canvasX;
-	    console.log("hey Dude");
-	    //code for marker Graphic Here.
+
+	    
+
 
 	  	A = ALPHA;
 	  	DIFF = X[0] - X[1];
@@ -72,7 +73,7 @@ function initControl() {
 	  	  		
 	  	  	} 
 	  	  	var ALPHA2 = ALPHA;	
-	  	  	
+	  	  	console.log("hey Dude");
 	  	  	ctx.clearRect(0, 0, width, height);
 	  	  	ctx.drawImage(image, 0, height * currentFrame, width, height, 0, 0, width, height);
 	  	  	

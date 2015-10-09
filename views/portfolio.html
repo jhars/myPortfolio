@@ -7,20 +7,44 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../style.css">
   </head>
-  <body>
-
-    <!-- HEADER AND SIDE GRAPHICS -->
-    <img src="../images/tall-wood.png" id="wood"/>
-    <div> <!-- FIXED SCROLL BAR TOP -->
-      <img id="jhLogo" src="../images/MainLogoJH.png" class="navbar-fixed-top center-block"/>
-      <a href="../index.html"><img id="JH" src="../images/logoJH.png" class="navbar-fixed-top center-block" /></a>
-    </div>
-    
-    <!-- CANVAS STARTS HERE -->
-     <div id="canvasDiv" class="container-fluid">
-         <canvas id="designDesign" class="center-block" width="500" height="4200"></canvas>
-    </div>
+  <body onload="initControl()">
+     <!-- HEADER AND SIDE GRAPHICS -->
+     <img src="../images/tall-wood.png" id="wood"/>
+     <div> <!-- FIXED SCROLL BAR TOP -->
+       <img id="jhLogo" src="../images/MainLogoJH.png" class="navbar-fixed-top center-block"/>
+       <a href="#"><img id="JH" src="../images/logoJH.png" class="navbar-fixed-top center-block" /></a>
+     </div>
+     
+     <!-- ***************START CANVAS************* -->
+      <div id="canvasDiv" class="container-fluid center-block">
+       <div class="row" id="portfolio-title">
+	       	<div class="col-xs-4"></div>
+	       	<div class="col-md-4">
+	       		<canvas id="clickCanvas" width="400" height="300" class="center-block"></canvas> 	
+	       	</div>
+         <div class="col-xs-4"></div>
+       </div>
+     </div>
+     <!-- ::::::::::::END CANVAS:::::::::::::::: -->
    
+		<!-- WEB-APP PORTFOLIO -->
+	<div class="container-fluid">
+		<div class="row" id="content"><br><br>
+		  <br><br><br>
+		  <div class="col-md-4">
+		    <a href="https://simplifylocal.herokuapp.com"><h1>$implify</h1><hr>
+		    <img id="imgSimpL" src="../images/screenShots/simpL.png" height="100%" width="100%"/></a>
+		  </div>
+		  <div class="col-md-4">
+		  <a href="http://lax360.bitballoon.com/views/helmet360"><h1>360.lax</h1><hr>
+		    <img id="imgHelmet" src="../images/screenShots/lax360.png" height="100%" width="100%"/></a>
+		  </div>
+		  <div class="col-md-4">
+		    <a href="https://nexu.herokuapp.com/"> <h1>nXu</h1><hr>
+		      <img id="imgNexu" src="../images/screenShots/nexu.png" height="100%" width="100%"/></a>
+		  </div>
+		</div>  <!-- endrow App Portfolio -->
+	</div>
 
     <!-- NAVMENU -->
     <div class="row"> <!-- START ROW  -->
@@ -32,7 +56,7 @@
 
         <ul>
           <li class='active nav-span'>
-            <a class='expandable' href='portfolio.html' title='Apps'>
+            <a class='expandable' href='../index.html' title='Dashboard'>
               <span class='glyphicon glyphicon-folder-open collapsed-element'></span>
               <span class='expanded-element'>App Portfolio</span>
             </a>
@@ -72,6 +96,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="../app.js"></script>
-    <script type="text/javascript" src="../js/design.js"></script>
+    <script type="text/javascript" src="../js/360Control.js"></script>
   </body>
 </html>
