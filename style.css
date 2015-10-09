@@ -4,7 +4,8 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 body {
-  background: none repeat scroll 0 0 #142933; }
+  background: none repeat scroll 0 0 white;
+  background-image: url('./images/chalkboard.jpg'); }
 
 
 /*=====================CUSTOM CSS======================*/
@@ -86,30 +87,36 @@ html {
 #clickCanvas {
   margin-top: 100px;
   background-image: url('./images/threeSixtylogo.png');
-  background-size: 33%;
+  background-size: 40%;
   background-repeat: no-repeat;
-  height: 1200;
+  height: 800;
   /*width: 1200px;*/
   /*margin-left: 300px;*/
-  position: relative;
+  /*position: relative;*/
   padding: 0px 50px 20px;
   z-index: 30;
   margin-bottom: 15px;
+  margin-left:56px;
 }
 /*CHANGE ABOVE*/
 #canvasDiv {
-  background-image: url('./images/chalkboard.jpg');
+  
   padding: 10px 10px 10px;
+  margin-left:56px;
+  height:100%;
 
   /*height:50%;*/
 }
 /*MY APP SCREENSHOTS*/
 #content {
-  background-color: #193E47;
-  height:500px;
+  /*background-color: #193E47;*/
+  /*height:250px;*/
+  /*height:50%;*/
+  /*width:400px;*/
   margin-left:56px;
-  margin-top: -750px;
-  position: relative;
+  margin-top: -400px;
+  /*padding:0;*/
+  /*position: relative;*/
 }
 #footer{
   /*background-color: #193E47;*/
@@ -120,6 +127,11 @@ html {
 /*CONTENT STYLING/FORMATTING*/
 #designDiv {
   /*padding-top: 100px;*/
+}
+
+#imgSimpL {
+  padding:10px;
+  /*width:400px;*/
 }
 
 div#skill-description {
