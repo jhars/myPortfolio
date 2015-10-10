@@ -147,12 +147,13 @@ div#skill-description {
 nav.sidebar-menu-collapsed {
   width: 400px;
   /*margin: 5px;*/
+  display: block;
   opacity: 1;
 }
 /*SB EXPANDED Width*/
 nav.sidebar-menu-expanded {
   width: 100%;
-  /*display: list-item;*/
+  display: block;
   font-size: 36px;
 }
 /*SIDEBAR*/
@@ -162,7 +163,7 @@ nav.sidebar {
   left: 0px;
   /*height: 100%;*/
   /*background: none repeat scroll 0 0;*/
-  /*background-image: "images/tall-wood.png";*/
+  
   /*padding: 10px 10px 10px;*/
   z-index: 20;
 }
@@ -180,22 +181,23 @@ nav.sidebar {
     /*margin-top: 24px;*/
     margin-top: 67px;
       /*font-size: 30;*/
+      margin-left: -30px;
        
   }
     /*LIST ITEM */
     nav.sidebar ul li {
-      /*font-size: 24;*/
+      font-size: 36;
 
     }
     /*LIST ITEM <a> EXPANDABLE*/
       nav.sidebar ul li a.expandable {
-        color: blue;
+        /*color: blue;*/
         /*padding:0;*/
         
       }
         /*LIST ITEM <a> Exp-Hover*/
         nav.sidebar ul li a.expandable:hover {
-          width: 100%;
+          /*width: 100%;*/
         }
         /*NAVI-SPAN??????*/
         .nav-span:hover{
@@ -203,15 +205,16 @@ nav.sidebar {
         }
     /*Span Expanded Element*/
     nav.sidebar ul li a.expandable span.expanded-element {
-          display: inline;
+          /*display: inline;*/
           /*font-size: 14;*/  /*NAV font Size*/
           color: #193A6A;/*NAV TEXT COLOR*/
-          /*margin-left: 14px;*/
+          margin-left: 9px;
+          background: none repeat scroll 0 0 #FFFFC2;
           
     }
     /*Span Expanded Element (ACTIVE)*/
     nav.sidebar ul li.active {
-      /*background: none repeat scroll 0 0 #FFFFC2; /*Background YELLOW color*/*/
+      /*Background YELLOW color*/
       /*display: none;*/
       color: #193A6A;
       /*margin-top: 67px;*/

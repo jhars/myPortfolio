@@ -3,61 +3,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>DesignJH</title>
+    <title>AboutJH</title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../style.css">
   </head>
-  <body onload="initControl()">
-     <!-- HEADER AND SIDE GRAPHICS -->
-     <img src="../images/tall-wood.png" id="wood"/>
-     <div > <!-- FIXED SCROLL BAR TOP -->
-       <img id="jhLogo" src="../images/MainLogoJH.png" class="navbar-fixed-top center-block"/>
-       <a href="#"><img id="JH" src="../images/logoJH.png" class="navbar-fixed-top center-block" /></a>
-     </div>
-     
-     <!-- ***************START CANVAS************* -->
-      <div id="canvasDiv" class="container-fluid">
-       <div class="row" id="portfolio-title">
-	       	
-          <div class="col-md-1"></div>
-   <!--        <div class="col-md-1"></div>
-          <div class="col-lg-1"></div> -->
-          <div class="col-md-1"></div>
-          <div class="col-md-1"></div>
-          <!-- <div class="col-lg-1"></div> -->
-          <!-- <div class="col-lg-1"></div> -->
-	       	<div class="col-lg-6">
-	       		<canvas id="clickCanvas"></canvas> 	
-	       	</div>
-          <div class="col-md-1"></div>
-          <div class="col-md-1"></div>
-          <div class="col-md-1"></div>
-         <!-- <div class="col-lg-1"></div> -->
-         <!-- <div class="col-sm-1"></div> -->
-         <!-- <div class="col-md-1"></div> -->
-      </div>
-   
-     <!-- ::::::::::::END CANVAS:::::::::::::::: -->
-   
-		<!-- WEB-APP PORTFOLIO -->
-		<div class="row" id="content">
+  <body>
+
+    <!-- HEADER AND SIDE GRAPHICS -->
+    <img src="../images/tall-wood.png" id="wood"/>
+    <div> <!-- FIXED SCROLL BAR TOP -->
+      <img id="jhLogo" src="../images/MainLogoJH.png" class="navbar-fixed-top center-block"/>
+      <a href="../index.html"><img id="JH" src="../images/logoJH.png" class="navbar-fixed-top center-block" /></a>
+    </div>
+
+    <!-- ================CUSTOM CONTENT HERE=============== -->
     
-    <br><br>
-		  <br><br><br>
-		  <div class="col-md-4">
-		    <a href="https://simplifylocal.herokuapp.com"><h1>$implify</h1><hr>
-		    <img class="imgSimpL" src="../images/screenShots/simpL.png" width="100%"/></a>
-		  </div>
-		  <div class="col-md-4">
-		  <a href="http://lax360.bitballoon.com/views/helmet360"><h1>360.lax</h1><hr>
-		    <img class="imgSimpL"  src="../images/screenShots/lax360.png" width="100%"/></a>
-		  </div>
-		  <div class="col-md-4">
-		    <a href="https://nexu.herokuapp.com/"> <h1>nXu</h1><hr>
-		      <img class="imgSimpL" src="../images/screenShots/nexu.png" width="100%"/></a>
-		  </div>
-		</div>  <!-- endrow App Portfolio -->
-	</div>
+
+   
 
     <!-- NAVMENU -->
     <div class="row"> <!-- START ROW  -->
@@ -69,7 +31,7 @@
 
         <ul>
           <li class='active nav-span'>
-            <a class='expandable' href='../index.html' title='Dashboard'>
+            <a class='expandable' href='portfolio.html' title='Apps'>
               <span class='glyphicon glyphicon-folder-open collapsed-element'></span>
               <span class='expanded-element'>App Portfolio</span>
             </a>
@@ -100,15 +62,46 @@
       </nav>
     </div> <!-- endrow -->
       <!-- ================== FOOTER=========================== -->
-    <div id="footer"> <!-- ...Or "me" -->
+    <div id="footer"> <!-- Or "me" id OR "job-title" -->
       <h1><br>Web and Software</h1>
       <h2>Application Portfolio</h2><br>
+    </div>
+
+
+
+
+
+    <div id="desginDiv">
+      <div id="skill-description">
+
+              <h1 id="me">Jon Harlan<hr></h1>
+              <br>
+              <h4>
+                Interactive Web Engineer<br>
+                Mobile-First Developer<br>
+                Application Designer<br>
+                Graphic Designer<br>  
+                UX/UI Designer<br>
+                Data Architect<br>
+                Market Saavy<br>
+                API Pro<br>
+              </h4>
+              <h1>Links & Live Projects:</h1>
+              <h3 id="category">GitHub
+                --- Linkedin --- Profile
+                <br><br><hr><br>
+              </h3>
+              <h1>Experience/Education:</h1>
+              <h3 id="category">General Assembly: Global School for Technology, Business, and Design. Online + Offline Ed meets E-commerce.<br><br></h1>
+              <h1>Contact:</h1><br><br>
+            
+      </div>
     </div>
     
   <!-- JAVASCRIPT REFERENCES -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="../app.js"></script>
-    <script type="text/javascript" src="../js/360Control.js"></script>
+    <script type="text/javascript" src="../js/design.js"></script>
   </body>
 </html>
