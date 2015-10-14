@@ -1,37 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html5>
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PortfolioJH</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>DesignJH</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
-  <body>
-    <!-- HEADER AND SIDE GRAPHICS -->
-    <img src="images/tall-wood.png" id="wood"/>
-    <div> <!-- FIXED SCROLL BAR TOP -->
-      <img id="jhLogo" src="./images/MainLogoJH.png" class="navbar-fixed-top center-block"/>
-      <a href="../index.html"><img id="JH" src="./images/logoJH.png" class="navbar-fixed-top center-block" /></a>
-    </div>
+  <body onload="initControl()">
+     <!-- HEADER AND SIDE GRAPHICS -->
+     <img src="./images/tall-wood.png" id="wood"/>
+     <div > <!-- FIXED SCROLL BAR TOP -->
+       <img id="jhLogo" src="./images/MainLogoJH.png" class="navbar-fixed-top center-block"/>
+       <a href="#"><img id="JH" src="./images/logoJH.png" class="navbar-fixed-top center-block" /></a>
+     </div>
+     
+          <!-- ***************START CANVAS************* -->
+           <div class="container">
+            <div class="row" id="portfolio-title">
+               <div class="col-xs-1"></div>
+               <div class="col-xs-1"></div>
+              <div class="col-sm-7">
+                <canvas id="clickCanvas"></canvas>  
+              </div>
+               <div class="col-md-1"></div>
+               <div class="col-xs-1"></div>
+               <div class="col-xs-1"></div>
 
- 
+           </div>
+        
+          <!-- ::::::::::::END CANVAS:::::::::::::::: -->
+        
+   
+    <!-- WEB-APP PORTFOLIO -->
+    <div class="row" id="content">
 
+      <div class="col-md-4">
+        <a href="https://simplifylocal.herokuapp.com"><h1>$implify</h1><hr>
+        <img class="imgSimpL" src="./images/screenShots/simpL.png" width="100%"/></a>
+      </div>
+      <div class="col-md-4">
+      <a href="http://lax360.bitballoon.com/views/helmet360"><h1>360.lax</h1><hr>
+        <img class="imgSimpL"  src="./images/screenShots/lax360.png" width="100%"/></a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://nexu.herokuapp.com/"> <h1>nXu</h1><hr>
+          <img class="imgSimpL" src="./images/screenShots/nexu.png" width="100%"/></a>
+      </div>
+    </div>  <!-- endrow App Portfolio -->
+  </div>
 
-<!-- ===========NAVBAR=========== -->       
     <!-- NAVMENU -->
     <div class="row"> <!-- START ROW  -->
       <nav class='sidebar sidebar-menu-collapsed'>
           <!-- + Hamburger Menu -->
           <a href='#' id='justify-icon'>
-            <span class='glyphicon glyphicon-align-justify'></span>
+            <span class='glyphicon glyphicon-align-justify expanded-element'></span>
           </a>
 
         <ul>
           <li class='active nav-span'>
-            <a class='expandable' href='#' title='Apps'>
+            <a class='expandable' href='#' title='Dashboard'>
               <span class='glyphicon glyphicon-folder-open collapsed-element'></span>
               <span class='expanded-element'>App Portfolio</span>
             </a>
@@ -39,7 +68,7 @@
           </li>
           <li class="active nav-span">
 
-            <a class='expandable' href='views/about.html' title='About Me'>
+            <a class='expandable' href='views/aboutme.html' title='About Me'>
               <span class='glyphicon glyphicon-user collapsed-element'></span>
               <span class='expanded-element'>About Me</span>
             </a>
@@ -62,16 +91,15 @@
       </nav>
     </div> <!-- endrow -->
       <!-- ================== FOOTER=========================== -->
-    <div id="footer">
+    <!-- <div id="footer">
       <h1><br>Web and Software</h1>
       <h2>Application Portfolio</h2><br>
-    </div>
-
-
-  <!-- ============= JAVASCRIPT REFERENCES =============== -->
+    </div> -->
+    
+  <!-- JAVASCRIPT REFERENCES -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/360control.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script src="./app.js"></script>
+    <script type="text/javascript" src="./js/360Control.js"></script>
   </body>
 </html>
