@@ -1,5 +1,6 @@
 
 var sources =  [
+                '../images/designGraphics/r7v7.gif',
                 '../images/designGraphics/rLogo.jpg',
                 '../images/designGraphics/rPackApp.png',
                 '../images/designGraphics/eSockMulti.jpg',
@@ -7,13 +8,8 @@ var sources =  [
                 '../images/designGraphics/eSockOrange.jpg',
                 '../images/designGraphics/eTHLogo.png',
                 '../images/designGraphics/Camo-pocket.jpg',
-                '../images/designGraphics/AzteCPocket.png',
-                '../images/designGraphics/uVaShorts.png',
-                '../images/designGraphics/eaMic.png',
-                '../images/designGraphics/r7v7.gif',
+                '../images/designGraphics/AzteCPocket.png',             
                 '../images/designGraphics/rFLGS.jpg'
-                
-
                 ];
 
 // var sources = [[BayViewGoes Here]]
