@@ -13,7 +13,7 @@
     <img src="../images/tall-wood.png" id="wood"/>
     <div> <!-- FIXED SCROLL BAR TOP -->
       <img id="jhLogo" src="../images/MainLogoJH.png" class="navbar-fixed-top center-block"/>
-      <a href="../index.html"><img id="JH" src="../images/logoJH.png" class="navbar-fixed-top center-block" /></a>
+      <a href="mobileSkill.html"><img id="JH" src="../images/logoJH.png" class="navbar-fixed-top center-block" /></a>
     </div>
     <!-- NAVMENU -->
     <div class="row"> <!-- START ROW  -->
@@ -25,7 +25,7 @@
 
         <ul>
           <li class='active nav-span'>
-            <a class='expandable' href='portfolio.html' title='Apps'>
+            <a class='expandable' href='mobilePortfolio.html' title='Apps'>
               <span class='glyphicon glyphicon-folder-open collapsed-element'></span>
               <span class='expanded-element'>App Portfolio</span>
             </a>
@@ -33,21 +33,21 @@
           </li>
           <li class="active nav-span">
 
-            <a class='expandable' href='aboutme.html' title='About Me'>
+            <a class='expandable' href='mobileAboutMe.html' title='About Me'>
               <span class='glyphicon glyphicon-user collapsed-element'></span>
               <span class='expanded-element'>About Me</span>
             </a>
            
           </li>
           <li class='active nav-span'>
-            <a class='expandable' href='skill.html' title='Languages'>
+            <a class='expandable' href='mobileSkill.html' title='Languages'>
               <span class='glyphicon glyphicon-console collapsed-element'></span>
               <span class='expanded-element'>Languages & Skills</span>
             </a>
         
           </li>
           <li class='active nav-span'>
-            <a class='expandable' href='graphicDesign.html' title='Design'>
+            <a class='expandable' href='mobileGraphicDesign.html' title='Design'>
               <span class='glyphicon glyphicon-tint collapsed-element'></span>
               <span class='expanded-element'>Design</span>
             </a>
@@ -55,42 +55,34 @@
         </ul>
       </nav>
     </div> <!-- endrow -->
-    <!-- !!!!!!!!!!!!!!!!!!!!!! CUSTOM CONTENT BELOW !!!!!!!!!!!!!!!!! -->
-    <!-- !!!!!!!!!!!!!!!!!!!!!! CUSTOM CONTENT BELOW !!!!!!!!!!!!!!!!! -->
-    <div class="container">
-      <div class="row">
-      <div class="col-md-2"></div>
-        
-          <div class="col-md-8" id="skill-description">
-              <h1 id="mid">Interactive<br>Engineer & Designer<hr></h1><br><br>
 
-              <h1 id="subtitle">Mobile:
-              <h3 id="category">[Swift 2.0 , Ionic , HTML5 for Browsers, Angular/ngCordova]<br></h3>
-              </h1>
 
-               <h1>Data:</h1>
-               <h3 id="category">Internal/External APIs<br>MongoDB<br>SQL<br>Web-Scraping<br></h3>
-               
-              <h1>Javascript-Frameworks:</h1>
-              <h3 id="category">jQuery, AJAX , Angular</h3><br>
 
-                <h1>Full-Stacks:</h1><h3 id="category">{ RUBY on RAILS }<br>Mongo // Express // AJAX // Node  (MEAN)<br>  
-                </h3>
+    <!-- ================CUSTOM CONTENT HERE=============== -->
 
-                <h1>Interactive Skills:</h1>
-                <h3 id="category">360 Degree Swipe Interaction<br>Adobe PhotoShop<br>HTML/CSS<br></h3> <!-- END OF SKILLS TAGS --> <br><br>
-
-          </div> <!-- END "skill-description" Div css -->
-        </div> <!-- END Middle "col" -->
-        <div class="col-md-2"></div>
+      <div class="container" id="desginDiv">
+        <div class="row">
+        <div class="col-md-3"></div>
+          <div class="col-md-6">
+          
+            <!-- CANVAS STARTS HERE -->
+             <div id="canvasDiv" class="container-fluid">
+                 <canvas id="designDesign" class="center-block" width="500" height="3600"></canvas>
+            </div>
+            
+          </div>
+          <div class="col-md-3"></div>
+        </div>
       </div>
-    </div>
-    <!-- ^^^^^^^^^^^^^^^^^^CUSTOM CONTENT ABOVE^^^^^^^^^^^^^^^^^ -->
-    <!-- ^^^^^^^^^^^^^^^^^^CUSTOM CONTENT ABOVE^^^^^^^^^^^^^^^^^ -->
 
-      <!-- ======================= FOOTER ======================= -->
-
+    <!-- ================CUSTOM CONTENT HERE=============== -->
     
+    <!-- ================== FOOTER=========================== -->
+<!--     <div id="footer"> 
+      <h1><br>Web and Software</h1>
+      <h2>Application Portfolio</h2><br>
+    </div> -->
+
   <!-- JAVASCRIPT REFERENCES -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

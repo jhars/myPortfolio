@@ -1,11 +1,31 @@
 <!DOCTYPE html5>
+
   <head>
+<!-- THIS Is a HELL of a Script for Mobile Site vs. Browser Site -->
+  <script>
+    if (document.location.search.indexOf("skipmobile") >= 0) {
+    document.cookie = "skipmobile=1";
+    } else if ((document.location.hostname.match(/\.mobi$/) || screen.width < 699)
+      && document.cookie.indexOf("skipmobile") == -1)
+      {
+      document.location = "views/mobile.html";
+      }
+  </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>DesignJH</title>
+    <script type="text/javascript">
+      if (screen.width <= 800) {
+        window.location = "http://www.google.com";
+      }
+    </script>
+
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    
+
   </head>
   <body onload="initControl()">
      <!-- HEADER AND SIDE GRAPHICS -->
