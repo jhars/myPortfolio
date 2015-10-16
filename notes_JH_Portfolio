@@ -6,4 +6,7 @@ NavMenu:
 Mobile =>
 ---------
 
+Problem with mobile is the NAVBAR Div-Tags !!
 
+-> they are spanning acrosse small mobile screen without being visible
+==>> disables the links.. maybe a z-index though

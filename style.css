@@ -6,10 +6,10 @@
 body {
   /*background: none repeat scroll 0 0 white;*/
   background-image: url('./images/chalkboard.jpg');
-  background-size: 410%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  back
+  /*background-size: 410%;*/
+  background-height:100%;
+  /*background-repeat: repeat-x;*/
+
 }
 /*##################################################*/
 /*############ HTML5 // CANVAS STUDIO ##############*/
@@ -106,12 +106,19 @@ h1{ /*HEADER-1*/
 }
 h1#mid {
   font-size: 48px;
-  z-index: 50;
+  /*z-index: 50;*/
 }
 h1#me {
   font-size: 64px;
   text-align: center;
   margin-left: 67px;
+}
+h1#me-mobile {
+  font-size: 48px;
+  text-align: center;
+  margin-left: 25px;
+  font-style: normal;
+  font-weight: bold;
 }
 h2{ /*HEADER-2*/
 */  text-align: center;
@@ -128,15 +135,14 @@ h3#exp {
   font-style: italic;
   text-align: left;
   font-size: 20px;
-  /*margin-left: 40px;*/
+  margin-left: 20px;
 }
 h3#subtitle{
-  text-align: center;
+  /*text-align: center;*/
   color: #BBCACA;
-  font-size: 24px;
+  font-size: 28px;
   /*margin-left: 50px;*/
 }
-
 h4{ /*HEADER-4*/
   text-align: center;
   color: white;
@@ -144,21 +150,29 @@ h4{ /*HEADER-4*/
   font-style: italic;
   line-height: 60px;
 }
+#links{
+  text-align:center;
+  z-index: 101;
+  font-size:24;
+
+}
 
 /**********************************************/
 /*SIDEMENU NAVBAR ORGINAL CSS*/
 /**********************************************/
 /*SB COLLAPSE Width*/
 nav.sidebar-menu-collapsed {
-  width: 400px;
+  width: 100px;
+  height:40px;
   display: block;
   opacity: 1;
+  margin-right: 40px;
 }
 /*SideBar EXPANDED Width*/
 nav.sidebar-menu-expanded {
   width: 100%;
-  display: block;
-  font-size: 36px;
+  /*display: block;*/
+  font-size: 28px;
 }
 /*==========SIDEBAR===========*/
 nav.sidebar {
@@ -166,22 +180,24 @@ nav.sidebar {
   top: 0px;
   left: 0px;
   z-index: 20;
+  margin-right: 75px;
 }
   /*########## HAMBURGER MENU ############*/
   nav.sidebar a#justify-icon {
     color: #193A6A;
-    font-size: 36px;
+    font-size: 48px;
     margin-left: 10px;
   }
   /* uuuuuuuuuu Un-Ordered LIST lllllllllll*/
   nav.sidebar ul {
     margin-top: 67px;
     margin-left: -30px;
+    margin-right: 50px;
        
   }
     /*LIST ITEM */
     nav.sidebar ul li {
-      font-size: 36;
+      font-size: 30;
     }
     /*LIST ITEM <a> EXPANDABLE*/
       nav.sidebar ul li a.expandable {
@@ -200,6 +216,7 @@ nav.sidebar {
           color: #193A6A;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>NAV TEXT COLOR*/
           margin-left: 9px;
           background: none repeat scroll 0 0 #FFFFC2;
+          box-shadow: 3px 10px 5px #000000;
           
     }
     /*Span Expanded Element (ACTIVE)*/
