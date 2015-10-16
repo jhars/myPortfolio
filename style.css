@@ -9,30 +9,70 @@ body {
   background-size: 410%;
   /*background-repeat: repeat-x;*/
 }
+/*##################################################*/
+/*############ HTML5 // CANVAS STUDIO ##############*/
+/*##################################################*/
+#canvasDiv {
+  margin-top: 100px;
+  background-image: url('./images/threeSixtylogo.png');
+  background-size: 50%;
+  /*z-index: 30;*/
+  background-height: 600px;
+  background-width: 1300px;
+  /*padding: 100px 110px 100px;*/
+  margin-bottom: -200px;
+  background-position: fixed;
 
-
-/*=====================CUSTOM CSS======================*/
-/*===========================================*/
-/*================================*/
-/*CUSTOM LAYOUT*/
-/*====================*/
-
-/*>>>>>>>NAV TEMPLATE*/
+  background-repeat: no-repeat;}
+/*- - - - - - - - CLICK-CANVAS - - - - - - - - - */
+#clickCanvas {
+  /*margin-top: 12px;*/
+  height:600px;
+  width:1300px;
+  z-index: 30;
+  margin-left:-12px;
+  /*margin-right:60px;*/
+  /*padding: 30px 35px 10px 30px;*/
+}
+/* # # # # - - END HTML5 Canvas - - # # # # */
+/*-----------------------------------------*/
+/* = = = = = MY-APP-SCREENSHOTS = = = = =*/
+#content {
+  margin-left:56px;
+  margin-top: 0px;
+  padding: 0;
+  height:100%;
+}
+div#skill-description {
+  margin-top: 120px;
+  margin-left:50px;
+}
+#footer{
+  opacity: .5;
+}
+#imgSimpL {
+  padding:10px;
+}
+/*===================CUSTOM CSS======================*/
+/*==================================================*/
+/*************** CUSTOM NAVIGATION MENU ************/
+/*------------------------------------------------*/
+/* ->>>>>> NAV TEMPLATE ->>>>>>>>>> */
 div#nav-bar-logo{
   margin-left: 200px;
 }
-#JH {
+#JH {  /*---This is Actual-LOGO---*/
   /*z-index: 999;*/
   height:100px;
   width:165px;
   /*margin-left: 670px;*/
 }
-#jhLogo {
+#jhLogo { /*---This is Top-BANNER---*/
 width: 100%;
 height: 100px;
 margin-left: 67px;
 }
-/*NAV-WOOD?*/
+/*======NAV-WOOD?======*/
 #wood {
   margin-left:-10px;
   width: 75px;
@@ -45,29 +85,33 @@ margin-left: 67px;
   margin-left: 67px;
 }
 /*HHHHHHHHH HEADERS HHHHHHHHHHH*/
-div#portfolio-title{
 
-}
-
-h1{
+h1{ /*HEADER-1*/
   text-align: center;
   color: white;
   font-size: 36px;
   font-style: italic;
-
 }
 h1#mid {
   font-size: 64px;
   z-index: 50;
-  /*margin-left: 100px;*/
 }
 h1#me {
   font-size: 64px;
   text-align: center;
-  /*margin-top: 50px;*/
   margin-left: 67px;
 }
-
+h2{ /*HEADER-2*/
+*/  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-style: italic;
+}
+h3{ /*HEADER-3*/
+  color: #728F8F;
+  text-align: center;
+  /*padding:34px;*/
+}
 h3#exp {
   font-style: italic;
   text-align: left;
@@ -80,71 +124,13 @@ h3#subtitle{
   font-size: 24px;
   margin-left: 50px;
 }
-h2{
-  text-align: center;
-  color: white;
-  font-size: 24px;
-  font-style: italic;
-}
-h3{
-  color: #728F8F;
-  text-align: center;
-  /*padding:34px;*/
-}
-h4{
+h4{ /*HEADER-4*/
   text-align: center;
   color: white;
   font-size: 36px;
   font-style: italic;
   line-height: 60px;
 }
-/*######## HTML5 // CANVAS STUDIO ##############*/
-
-#canvasDiv {
-  /*padding: 100px 110px 100px;*/
-  height:100%;
-}
-/*- - - - - - - - HTML5 CANVAS STYLING - - - - - - - - - */
-#clickCanvas {
-  margin-top: 100px;
-  background-image: url('./images/threeSixtylogo.png');
-  /*background-height: 200px;*/
-  background-size: 40%;
-  background-repeat: no-repeat;
-  /*background-position: relative;*/
-  /*width:400px;*/
-  height:100%;
-  z-index: 30;
-  margin-left:36px;
-  margin-bottom: -200px;
-  padding: 0px 35px 10px;
-}
-/* # # # # - - END HTML5 Canvas - - # # # # */
-
-/* = = = = = = MY APP SCREENSHOTS = = = = = = = = = */
-#content {
-
-  margin-left:56px;
-  margin-top: 0px;
-  padding: 0;
-  /*padding: 0px 50px 20px;*/
-  height:100%;
-  /*background-size: 100%;*/
-}
-div#skill-description {
-  margin-top: 120px;
-  margin-left:50px;
-}
-#category {
-  /*margin-left: 56px;*/
-}
-#footer{
-  opacity: .5;
-}
-#imgSimpL {
-  padding:10px;
-}
-
 
 /**********************************************/
 /*SIDEMENU NAVBAR ORGINAL CSS*/
@@ -152,12 +138,10 @@ div#skill-description {
 /*SB COLLAPSE Width*/
 nav.sidebar-menu-collapsed {
   width: 400px;
-  /*margin: 5px;*/
   display: block;
   opacity: 1;
-  /*display: none;*/
 }
-/*SB EXPANDED Width*/
+/*SideBar EXPANDED Width*/
 nav.sidebar-menu-expanded {
   width: 100%;
   display: block;
@@ -168,40 +152,26 @@ nav.sidebar {
   position: fixed;
   top: 0px;
   left: 0px;
-  /*height: 100%;*/
-  /*background: none repeat scroll 0 0;*/
-  
-  /*padding: 10px 10px 10px;*/
   z-index: 20;
 }
   /*########## HAMBURGER MENU ############*/
   nav.sidebar a#justify-icon {
     color: #193A6A;
     font-size: 36px;
-    /*margin-top: 40px;*/
     margin-left: 10px;
   }
-  /*GlyphIcon HAMBURGER*/
-
-  /*LIST*/
+  /* uuuuuuuuuu Un-Ordered LIST lllllllllll*/
   nav.sidebar ul {
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*margin-top: 24px;*/
-
     margin-top: 67px;
-      /*font-size: 30;*/
-      margin-left: -30px;
+    margin-left: -30px;
        
   }
     /*LIST ITEM */
     nav.sidebar ul li {
       font-size: 36;
-
     }
     /*LIST ITEM <a> EXPANDABLE*/
       nav.sidebar ul li a.expandable {
-
       }
         /*LIST ITEM <a> Exp-Hover*/
         nav.sidebar ul li a.expandable:hover {

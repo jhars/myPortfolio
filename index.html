@@ -16,16 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>DesignJH</title>
-    <script type="text/javascript">
-      if (screen.width <= 800) {
-        window.location = "http://www.google.com";
-      }
-    </script>
-
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
-    
-
   </head>
   <body onload="initControl()">
      <!-- HEADER AND SIDE GRAPHICS -->
@@ -38,11 +30,11 @@
           <!-- ***************START CANVAS CONTAINER ************* -->
       <div class="container">
         <div class="row center-block nav-bar-fixed" id="portfolio-title">
-           <div class="col-md-3"></div>
-          <div class="col-md-6">
-            <canvas id="clickCanvas" class="center-block nav-bar-fixed"></canvas>  
+           <div class="col-xs-2"></div>
+          <div class="col-xs-9 nav-bar-fixed center-block" id="canvasDiv">
+            <canvas id="clickCanvas" class="center-block"></canvas>  
           </div>
-          <div class="col-md-3"></div>
+          <div class="col-xs-1"></div>
         </div>
       </div>
           <!-- ::::::::::::END CANVAS:::::::::::::::: -->
@@ -118,6 +110,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="./app.js"></script>
-    <script type="text/javascript" src="./js/360Control.js"></script>
+    <script type="text/javascript" src="360Control.js"></script>
   </body>
 </html>
