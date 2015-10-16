@@ -16,9 +16,16 @@ var height = 81.75;
 var B;
 var ALPHA;
 var DIFF = 0;
-
-
 ctx.drawImage(image, 0, height * currentFrame, width, height, 0, 0, width, height);
+
+
+
+// var iphoneMarker = document.getElementById("shot-iphone");
+// var ictx = iphoneMarker.getContext("2d");
+// var shotIphone = new Image()
+// shotIphone.src = './images/shotOnMyIphone.png';
+// console.log("img loades");
+
 
 
 
@@ -30,16 +37,24 @@ function initControl() {
 
 	function doMouseDown (event) {
 		X[0] = event.pageX;
+
+
+
+
+		// ictx.drawImage(shotIphone, 69, 58);
+		// ictx.drawImage(shotIphone, 400, 400, 400, 400);
+		// console.log("img DRAWN");
+
 		canvas.addEventListener("mousemove",mouseX, false);
-		document.body.addEventListener("mouseup", mouseUp, false);		
+		document.body.addEventListener("mouseup", mouseUp, false);
+
+
 	};
 
 	function mouseUp(event) {
 	  canvas.removeEventListener("mousemove",mouseX, false);
 
 	};
-
-
 
 	function mouseX (event) {
 	    var canvasX = event.pageX;

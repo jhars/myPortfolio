@@ -29,14 +29,21 @@
      
           <!-- ***************START CANVAS CONTAINER ************* -->
       <div class="container">
+
         <div class="row center-block nav-bar-fixed" id="portfolio-title">
-           <div class="col-xs-2"></div>
-          <div class="col-xs-9 nav-bar-fixed center-block" id="canvasDiv">
+           <!-- <div class="col-xs-2"></div> -->
+          <div class="col-xs-8 center-block" id="canvasDiv">
             <canvas id="clickCanvas" class="center-block"></canvas>  
           </div>
-          <div class="col-xs-1"></div>
+          
+          <div class="col-xs-4">
+          <canvas id="myCanvas" height="500" width="1500"></canvas>
+             
         </div>
+        <!-- <div class="col-xs-2"></div> -->
       </div>
+
+    </div>  
           <!-- ::::::::::::END CANVAS:::::::::::::::: -->
         
    
@@ -106,6 +113,17 @@
       <h2>Application Portfolio</h2><br>
     </div> -->
     
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var imageObj = new Image();
+
+      imageObj.onload = function() {
+        context.drawImage(imageObj, 0, 0);
+      };
+      imageObj.src = 'images/shotOnMyIphone.png';
+    </script>
+
   <!-- JAVASCRIPT REFERENCES -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

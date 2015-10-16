@@ -13,27 +13,35 @@ body {
 /*############ HTML5 // CANVAS STUDIO ##############*/
 /*##################################################*/
 #canvasDiv {
-  margin-top: 100px;
-  background-image: url('./images/threeSixtylogo.png');
-  background-size: 50%;
-  /*z-index: 30;*/
-  background-height: 600px;
-  background-width: 1300px;
-  /*padding: 100px 110px 100px;*/
-  margin-bottom: -200px;
-  background-position: fixed;
-
-  background-repeat: no-repeat;}
+margin-bottom: -300px;
+  height: 1100px;
+  width: 2200px;
+}
 /*- - - - - - - - CLICK-CANVAS - - - - - - - - - */
 #clickCanvas {
-  /*margin-top: 12px;*/
-  height:600px;
-  width:1300px;
-  z-index: 30;
+  margin-top: 100px;
+  /*margin-bottom: -300px;*/
   margin-left:-12px;
-  /*margin-right:60px;*/
-  /*padding: 30px 35px 10px 30px;*/
+  
+  background-image: url('./images/threeSixtylogo.png');
+  /*background-size: 100%;*/
+  /*background-position: fixed;*/
+  background-repeat: no-repeat;
+
+/*  height: 1100px;
+  width: 2200px;*/
+  width:105%;
+  height:100%;
+  z-index: 30;
 }
+#mycanvas {
+  margin-left: 850px;
+  margin-top: -650px;
+  height:25%;
+  /*width:100%;*/
+
+}
+
 /* # # # # - - END HTML5 Canvas - - # # # # */
 /*-----------------------------------------*/
 /* = = = = = MY-APP-SCREENSHOTS = = = = =*/
