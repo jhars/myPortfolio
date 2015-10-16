@@ -7,7 +7,9 @@ body {
   /*background: none repeat scroll 0 0 white;*/
   background-image: url('./images/chalkboard.jpg');
   background-size: 410%;
-  /*background-repeat: repeat-x;*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  back
 }
 /*##################################################*/
 /*############ HTML5 // CANVAS STUDIO ##############*/
@@ -53,7 +55,7 @@ margin-bottom: -300px;
 }
 div#skill-description {
   margin-top: 120px;
-  margin-left:50px;
+  margin-left:67px;
 }
 #footer{
   opacity: .5;
@@ -90,10 +92,12 @@ margin-left: 67px;
 }
 #designDesign {
   margin-top: 140px;
-  margin-left: 67px;
+  margin-left: 60px;
+  size:100%;
 }
-/*HHHHHHHHH HEADERS HHHHHHHHHHH*/
-
+ /*================================*/
+  /*HHHHHHHHH HEADERS HHHHHHHHHHH*/
+ /*================================*/
 h1{ /*HEADER-1*/
   text-align: center;
   color: white;
@@ -101,7 +105,7 @@ h1{ /*HEADER-1*/
   font-style: italic;
 }
 h1#mid {
-  font-size: 64px;
+  font-size: 48px;
   z-index: 50;
 }
 h1#me {
@@ -124,14 +128,15 @@ h3#exp {
   font-style: italic;
   text-align: left;
   font-size: 20px;
-  margin-left: 67px;
+  /*margin-left: 40px;*/
 }
 h3#subtitle{
-  text-align: left;
+  text-align: center;
   color: #BBCACA;
   font-size: 24px;
-  margin-left: 50px;
+  /*margin-left: 50px;*/
 }
+
 h4{ /*HEADER-4*/
   text-align: center;
   color: white;
