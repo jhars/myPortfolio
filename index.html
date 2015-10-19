@@ -1,101 +1,87 @@
 <!DOCTYPE html5>
 <html>
-  <head> <!-- ============= HEAD ========== -->
 <!-- THIS Is a HELL of a Script for Mobile Site vs. Browser Site -->
-  <script>
-  if (document.location.search.indexOf("skipmobile") >= 0) {document.cookie = "skipmobile=1"} else if ((document.location.hostname.match(/\.mobi$/) || screen.width < 699)&& document.cookie.indexOf("skipmobile") == -1){document.location = "views/mobile.html"}
+  <head> <!-- ============= HEAD ========== -->
+    <script>
+      if (document.location.search.indexOf("skipmobile") >= 0) {document.cookie = "skipmobile=1"} else if ((document.location.hostname.match(/\.mobi$/) || screen.width < 699)&& document.cookie.indexOf("skipmobile") == -1){document.location = "views/mobile.html"}
     </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>DesignJH</title>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
   </head> <!-- ============= HEAD ========== -->
-   
   <body onload="initControl()"> <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --> <!-- !!!!BBBBBOOOOOOOODDDDDDDDYYYYYYYYYYY !!!!!!!!!!!!!!!! --> <!-- !!!!!!!!!!BBBBBBBOOOOOOOODDDDDDDDYYYYYYYYYYY !!!!!!!!!!!!!!!! -->
      
+
      <!--  = = = = UPPER 90 GRAPHICS = = = = = = = = = -->
      <img src="./images/tall-wood.png" id="wood"/>
      <div > <!-- FIXED SCROLL BAR TOP --><img id="jhLogo" src="./images/MainLogoJH.png" class="navbar-fixed-top center-block"/><a href="#"><img id="JH" src="./images/logoJH.png" class="navbar-fixed-top center-block" /></a></div>
      <!--  = = = = UPPER 90 GRAPHICS = = = = = = = = = -->
+      
 
-      <div class="container"><!-- ******************START CANVAS CONTAINER ********************* -->
+      <div class="container"><!-- ******START CANVAS CONTAINER ************* -->
         <div class="row center-block nav-bar-fixed" id="portfolio-title">
-          <div class="col-xs-8" id="canvasDiv">
-            <canvas id="clickCanvas" class="center-block" width="600"></canvas>  
-          </div>
-          <div class="col-lg-4">
-            <canvas id="myCanvas" height="600" width="1000"></canvas>
-          </div>
+          <div class="col-xs-8" id="canvasDiv"><canvas id="clickCanvas" class="center-block" width="600"></canvas></div>
+          <div class="col-lg-4"><canvas id="myCanvas" height="600" width="1000"></canvas></div>
         </div>
-      </div>  <!-- :::::::::::::::::::::::::::::::::::::::END CANVAS:::::::::::::::::::::::::::::::: -->
+      </div>  <!-- ::::::::::::::::::::::::::::END CANVAS::::::::::::::::::: -->
+
 
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ START CONTAINER-FLUID $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ START CONTAINER-FLUID $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ START CONTAINER-FLUID $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->  
   <div class="container-fluid"> <!--  - - - - - - -  - - - - -  - - - - - -  - - CONTAINER -->
-
     <!-- >>>>>>>>>>>>>>>>>>>>>>>> WEB-APP PORTFOLIO <<<<<<<<<<<<<<<<<<<<<<<<< -->
     <div class="row" id="content">
-      <div class="col-md-4">
-        <a href="https://simplifylocal.herokuapp.com"><h1>$implify</h1><hr>
-        <img class="imgSimpL" src="./images/screenShots/simpL.png" width="100%"/></a>
-      </div>
-      <div class="col-md-4">
-      <a href="http://lax360.bitballoon.com/index.html"><h1>360.lax</h1><hr>
-        <img class="imgSimpL"  src="./images/screenShots/lax360.png" width="100%"/></a>
-      </div>
-      <div class="col-md-4">
-        <a href="https://nexu.herokuapp.com/"> <h1>nXu</h1><hr>
-          <img class="imgSimpL" src="./images/screenShots/nexu.png" width="100%"/></a>
-      </div>
+      <div class="col-md-4"><a href="https://simplifylocal.herokuapp.com"><h1>$implify</h1><hr><img class="imgSimpL" src="./images/screenShots/simpL.png" width="100%"/></a></div>
+      <div class="col-md-4"><a href="http://lax360.bitballoon.com/index.html"><h1>360.lax</h1><hr><img class="imgSimpL"  src="./images/screenShots/lax360.png" width="100%"/></a></div>
+      <div class="col-md-4"><a href="https://nexu.herokuapp.com/"> <h1>nXu</h1><hr><img class="imgSimpL" src="./images/screenShots/nexu.png" width="100%"/></a></div>
     </div>  <!-- - - - - - - - - - -  End-Row APP PORTFOLIO - - - - - - - -  -->
-    
-    <hr><hr><br><br><!-- ====================== START LAXRANK ======== -->
-    <br><br><br><br><!-- ====================== START LAXRANK ======== -->
-    <div class="row" id="lax-rank"> <!-- ====== START LAXRANK ======== -->
+
+    <hr><hr><br><br><!-- ====================== START LAXRANK ======== --><br><br><br><br><!-- ====================== START LAXRANK ======== -->
+    <div class="row" id="lax-rank"> <!-- ====== Start LaxRank ======== -->
       <div class="col-md-4">
         <br><h1 id="exp">In-Development:<br>LaxRank</h1><br>
         <h3 id="subtitle">Created Internal-API via Web-Scraping with Node.js & Express. The app displays live rankings of the every high-school lacrosse team in the country. The ranking system, laxpower.com, is a completely seperate web-application built in PHP. I am utilizing the Ionic Framework to optimize this data for mobile devices and hope to release in the App Store Winter 2016.</h3>
       </div>
       <div class="col-md-4"><img src="images/iphoneScreenShot.png"/></div>
-      <div class="col-lg-2" id="lax-rank-btn"><br><br>
-        <br><a href="https://github.com/jhars/LaxRank"><button>Link to GitHub</button></a><br>
-        <br><a href="https://laxapi.herokuapp.com/api/teams">Link to Live API (4,000 Teams - JSON Objects)</a><br>
-      </div>
-    </div> <!--  - - -  -  - - - - - - END-ROW LaxRank - - - - - - - - - - -  - - -->
+      <div class="col-lg-2" id="lax-rank-btn"><br><br><br><a href="https://github.com/jhars/LaxRank"><button>Link to GitHub</button></a><br><br><a href="https://laxapi.herokuapp.com/api/teams">Link to Live API (4,000 Teams - JSON Objects)</a><br></div>
+    </div> <!--  - - -  -  - - - - - - End LaxRank - - - - - - - - - - -  - - -->
     <br><hr><hr><!--  - - -  -  - - - -END-ROW LaxRank - - - - - - - - - - -  - - -->
     <!--  - - -  -  - - - - - - -  - - END-ROW LaxRank - - - - - - - - - - -  - - -->
- 
-  </div> <!-- - - - - - - - -  - - - - - - - - CONTAINER -->
-  <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ END CONTAINER-FLUID >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Ending Container-Fluid $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+  
 
-    <!--  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  NAVMENU  ======================= >>>>>>>>>>>>>>>>>>>>  -->
+  </div> <!-- - - - - - - - -  - - - - - - - - CONTAINER -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ END CONTAINER-FLUID >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Ending Container-Fluid $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ END CONTAINER-FLUID >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+
+
+<!--  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  NAVMENU  ======================= >>>>>>>>>>>>>>>>>>>>  -->
     <div class="row"> <!-- START Navigaiton ROW  -->
       <nav class='sidebar sidebar-menu-collapsed'> <!-- - - - START  >>>>>>>>>>>>>>>  NAVMENU  ======================= >>>>>>>>>>>>>>>>>>>>  -->
-        
         <!-- +++++++++++ Hamburger Menu +++++++++++++++ -->
         <a href='#' id='justify-icon'><span class='glyphicon glyphicon-align-justify expanded-element'></span></a>
         <!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
-        
         <ul>
           <li class='active nav-span'><a class='expandable' href='#' title='Dashboard'><span class='glyphicon glyphicon-folder-open collapsed-element'></span><span class='expanded-element'>App Portfolio</span></a></li>
           <li class='active nav-span'><a class='expandable' href='views/skill.html' title='Languages'><span class='glyphicon glyphicon-console collapsed-element'></span><span class='expanded-element'>Languages & Skills</span></a></li>
           <li class="active nav-span"><a class='expandable' href='views/aboutme.html' title='About Me'><span class='glyphicon glyphicon-user collapsed-element'></span><span class='expanded-element'>About Me</span></a></li>
           <li class='active nav-span'><a class='expandable' href='views/graphicDesign.html' title='Design'><span class='glyphicon glyphicon-tint collapsed-element'></span><span class='expanded-element'>Design</span></a></li>
         </ul>
-
       </nav> <!-- ===========================END NAV-igation MENU <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
     </div> <!-- endrow - - - - - - - - NAVIGATION  MENU - - endrow - ]]]]]]]]]]]]]] -->
-      <!-- = = = = =JAVASCRIPT REFERENCES = = = = =  = = = = JAVASCRIPT REFERENCES  = = = = =JAVASCRIPT REFERENCES = = = = =  = = = = JAVASCRIPT REFERENCES -->
+
+
+
+<!-- = = = = =JAVASCRIPT REFERENCES = = = = =  = = = = JAVASCRIPT REFERENCES  = = = = =JAVASCRIPT REFERENCES = = = = =  = = = = JAVASCRIPT REFERENCES -->
+<!-- = = = = =JAVASCRIPT REFERENCES = = = = =  = = = = JAVASCRIPT REFERENCES  = = = = =JAVASCRIPT REFERENCES = = = = =  = = = = JAVASCRIPT REFERENCES -->
     <script>
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d'); var imageObj = new Image();
-      imageObj.onload = function() {
-      context.drawImage(imageObj, 0, 0);
-      };
-      imageObj.src = 'images/shotOnMyIphone.png';
+      imageObj.onload = function() {context.drawImage(imageObj, 0, 0);};imageObj.src = 'images/shotOnMyIphone.png';
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
