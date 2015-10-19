@@ -48,11 +48,41 @@ function loadImages(sources, callback) {
         
       for (i=0;i< 12;i++) {//number of IMAGES Loaded
         console.log(images[i]);
-        context.drawImage(images[i], 0, i*350, 350, 290);
-      context.shadowColor = '#999';
-      context.shadowBlur = 70;
-      context.shadowOffsetX = 0;
-      context.shadowOffsetY = 15;
+
+
+        if (i<=3){
+          context.drawImage(images[i], i*400, 0, 350, 290);
+          context.shadowColor = '#999';
+          context.shadowBlur = 70;
+          context.shadowOffsetX = 0;
+          context.shadowOffsetY = 15;
+        } else if (i>3 && i<=7) {
+          context.drawImage(images[i], 2800-(i*400), 400, 350, 350);
+          context.shadowColor = '#999';
+          context.shadowBlur = 70;
+          context.shadowOffsetX = 0;
+          context.shadowOffsetY = 15;
+        } else if (i>7 && i<=12) {
+          context.drawImage(images[i], 3600-(i*400), 800, 350, 350);
+          context.shadowColor = '#999';
+          context.shadowBlur = 70;
+          context.shadowOffsetX = 0;
+          context.shadowOffsetY = 15;
+        }
+
+        // context.drawImage(images[i], 0, i*350, 350, 290);
+        // context.shadowColor = '#999';
+        // context.shadowBlur = 70;
+        // context.shadowOffsetX = 0;
+        // context.shadowOffsetY = 15;
+
+
+
+      // context.drawImage(images[i], i*300, i*350, 350, 290);
+      // context.shadowColor = '#999';
+      // context.shadowBlur = 70;
+      // context.shadowOffsetX = 0;
+      // context.shadowOffsetY = 15;
 
       }
     });

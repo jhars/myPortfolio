@@ -5,10 +5,10 @@
 
 body {
   /*background: none repeat scroll 0 0 white;*/
-  background-image: url('./images/chalkboard.jpg');
+  background-image: url('./images/chalkboard.png');
   /*background-size: 410%;*/
   background-height:100%;
-  /*background-repeat: repeat-x;*/
+  /*background-width:px;*/
 
 }
 /*##################################################*/
@@ -37,10 +37,10 @@ margin-bottom: -300px;
   z-index: 30;
 }
 #mycanvas {
-  margin-left: 850px;
+  margin-left: 800px;
   margin-top: -650px;
-  height:25%;
-  /*width:100%;*/
+  /*height:50%;*/
+  width:150%;
 
 }
 
@@ -51,7 +51,7 @@ margin-bottom: -300px;
   margin-left:56px;
   margin-top: 0px;
   padding: 0;
-  height:100%;
+  /*height:100%;*/
 }
 div#skill-description {
   margin-top: 120px;
@@ -92,8 +92,8 @@ margin-left: 67px;
 }
 #designDesign {
   margin-top: 140px;
-  margin-left: 60px;
-  size:100%;
+  /*margin-left: 80px;*/
+  /*size:100%;*/
 }
  /*================================*/
   /*HHHHHHHHH HEADERS HHHHHHHHHHH*/
@@ -131,17 +131,46 @@ h3{ /*HEADER-3*/
   text-align: center;
   /*padding:34px;*/
 }
+#lax-rank{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  /*font-style: italic;*/
+  /*line-height: 60px;*/
+  margin-left: 67px;
+  /*padding-top: 24px;*/
+  /*margin-top: -700px;*/
+}
+#lax-rank-btn{
+  /*text-align: right;*/
+  font-size: 28px;
+}
+#home-links{
+  text-align: right;
+}
+
 h3#exp {
   font-style: italic;
   text-align: left;
   font-size: 20px;
   margin-left: 20px;
 }
+h3#exp1 {
+  font-style: italic;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 20px;
+}
 h3#subtitle{
-  /*text-align: center;*/
   color: #BBCACA;
   font-size: 28px;
-  /*margin-left: 50px;*/
+  text-align: left;
+}
+h3#subtitle1{
+  color: #BBCACA;
+  font-size: 28px;
+  text-align: left;
+  /*padding-top: 50px;*/
 }
 h4{ /*HEADER-4*/
   text-align: center;
@@ -150,6 +179,8 @@ h4{ /*HEADER-4*/
   font-style: italic;
   line-height: 60px;
 }
+
+
 #links{
   text-align:center;
   z-index: 101;
@@ -193,7 +224,6 @@ nav.sidebar {
     margin-top: 67px;
     margin-left: -30px;
     margin-right: 50px;
-       
   }
     /*LIST ITEM */
     nav.sidebar ul li {
